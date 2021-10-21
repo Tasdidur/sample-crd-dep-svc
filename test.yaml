@@ -1,0 +1,18 @@
+apiVersion: xapi.com/v1
+kind: Xcrd
+metadata:
+  name: tx
+spec:
+  # Add fields here
+  name: "tx"
+  finder: "fnd"
+  domain: "tasdid2.com"
+  image: "tasdidur/test-ingress"
+  port: 8001
+  target-port: 8081
+  paths:
+    - "/hi"
+    - "/hello"
+    - "/bye"
+status:
+  all_ready: false
